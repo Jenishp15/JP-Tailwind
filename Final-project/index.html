@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark-project</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'xs': '480px',
+
+                    'sm': '640px',
+
+                    'md': '768px',
+
+                    'lg': '1024px',
+
+                    'xl': '1280px',
+
+                    '2xl': '1536px',
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="scroll-smooth">
+
+    <nav class="container relative mx-auto p-6">
+
+        <div class="flex justify-between space-x-20 items-center px-6 lg:px-16 mx-auto">
+            <div>
+                <img src="img/logo-bookmark.svg" alt="">
+            </div>
+
+            <div class=" hidden md:flex space-x-10 text-gray-400">
+                <ul class="flex space-x-10 items-center font-medium">
+                    <li><a href="#features">FEATURES</a></li>
+                    <li><a href="#download">DOWNLOAD</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <button class="bg-red-500 text-white shadow-md rounded-md px-7 py-2">LOGIN</button>
+            </div>
+
+            <div class="block md:hidden text-3xl text-black">
+                <i class="ri-menu-line" onclick="menulist(this)"></i>
+            </div>
+        </div>
+
+        <div class="navMenu py-5 px-6 hidden md:hidden text-black">
+            <ul class="flex flex-col text-center  font-medium">
+                <li class="my-2"><a href="#features">FEATURES</a></li>
+                <hr class="border-gray-400">
+                <li class="my-2"><a href="#download">DOWNLOAD</a></li>
+                <hr class="border-gray-400">
+                <li class="my-2"><a href="#fea">FAQ</a></li>
+                <hr class="border-gray-400">
+                <li class="my-2"><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <header class="container mx-auto p-6 lg:px-16 lg:py-12">
+        <div class="flex flex-col-reverse mx-auto lg:flex-row">
+
+            <div class="w-12/12 lg:w-6/12 text-center lg:text-left  lg:py-12 lg:px-10 p-6">
+                <h1 class="text-2xl lg:text-6xl font-bold">A Simple Bookmark Manager</h1>
+                <p class="my-5 lg:my-14 text-lg lg:text-2xl text-gray-400 lg:font-medium">A clean and simple interface
+                    to organize your favourite websites. Open a new browser tab and see
+                    your sites load instantly. Try it for free.</p>
+
+                <div class="flex justify-center items-center my-10 space-x-4">
+                    <button
+                        class="px-4 py-4 bg-blue-700 rounded-md text-white text-sm md:text-lg lg:text-lg font-semibold">Get
+                        It On Chrome</button>
+                    <button
+                        class="px-4 py-4 bg-gray-400 rounded-md text-black text-sm md:text-lg lg:text-lg font-semibold">Get
+                        It On Firefox</button>
+                </div>
+            </div>
+
+            <div class="relative w-12/12 lg:w-6/12 mx-autoh-full">
+                <div
+                    class="absolute bg-blue-700 h-[300px] w-[550px] rounded-bl-[45%] left-[30%] top-[40%] hidden xl:block">
+                </div>
+                <img src="img/bg-hero.svg" alt="" class="relative overflow-y-visible mx-auto">
+            </div>
+        </div>
+
+    </header>
+
+    <section id="features" class="container mx-auto p-6 lg:px-16 lg:py-12">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Features</h1>
+            <p class=" max-w-md mx-auto my-6 text-gray-400 text-lg">Our aim is to make it quick and easy for you to
+                access your favourite websites. Your bookmarks sync between your devices so you can access them on the
+                go.</p>
+        </div>
+
+        <div class="mt-12">
+            <div>
+                <ul class="flex flex-col md:flex-row text-center md:space-x-16 text-lg my-5 mx-auto justify-center">
+                    <li>Simple Bookmarking</li>
+                    <hr class="my-4">
+                    <li>Speedy Searching</li>
+                    <hr class="my-4">
+                    <li>Easy Sharing</li>
+                </ul>
+                <hr>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+    let navMenu = document.querySelector(".navMenu")
+    // console.log(navMenu);
+
+    function menulist(e) {
+        console.log(e.classList = e.classList == "ri-menu-line" ? "ri-close-line" : "ri-menu-line")
+
+        if (e.classList == "ri-close-line") {
+
+            navMenu.classList.add("block")
+            navMenu.classList.remove("hidden")
+        }
+        else {
+
+            navMenu.classList.add("hidden")
+            navMenu.classList.remove("block")
+        }
+
+    }
+</script>
