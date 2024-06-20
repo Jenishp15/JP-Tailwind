@@ -12,11 +12,11 @@
 </head>
 <body>
 
-    <nav class="flex fixed w-full z-10 justify-between px-20 py-2 bg-black text-white">
+    <nav class="flex fixed w-full z-10 justify-between px-14 py-2 items-center bg-black text-white">
         <div class="logo text-[35px]"><a href="index.html">MAXIM</a></div>
     
-        <div class="menus flex items-center">
-            <ul class="flex flex-row space-x-6 item-center">
+        <div class="navMenu lg:flex menus hidden items-center">
+            <ul class="flex flex-col lg:flex-row lg:space-x-6 justify-center">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -26,23 +26,27 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+        <div class="block lg:hidden text-2xl">
+            <i class="ri-menu-line" onclick="menulist(this)"></i>
+        </div>
+        
     </nav>
 
     <div>
-        <header class="h-lvh justify-center items-center bg-cover bg-fixed bg-center " >
+        <header class="h-lvh flex justify-center items-center bg-cover bg-fixed bg-center">
             <img src="img/main-bg.jpg" alt="" style="background-size: cover; background-repeat: no-repeat; position: relative; height: 100vh; width:100%; background-position: center;">
-            <div class="text-center z-5 absolute top-[40%] left-[25%]">
+            <div class="text-center z-5 absolute">
                 <h1 class="text-5xl font-bold text-white ">Welcome to Maxim</h1>
                 <p class="text-2xl font-800 text-white">We are team of talented designers making websites with Bootstrap</p>
                 <button class="px-8 py-2  border-white rounded-lg mt-10 text-white border-2">GET STARTED</button>
             </div>
         </header>
         
-        <section class="flex justify-between py-10 px-32">
-            <div class="image h-auto w-6/12">
+        <section class=" block lg:flex lg:justify-between py-10 lg:px-32 px-16">
+            <div class="image h-auto w-12/12 lg:w-6/12">
                 <img src="img/about-img.jpg" alt="" class="py-10 ">
             </div>
-            <div class="content w-6/12 p-10">
+            <div class="content w-12/12 lg:w-6/12 p-10">
                 <h1 class="text-4xl font-normal text-slate-700 ">Voluptatem dignissimos provident</h1>
                 <p class="text-[18px] font-light text-black  my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 <div class="my-5 flex items-center">
@@ -69,42 +73,42 @@
             </div>
         </section> 
 
-        <section class="px-32 flex flex-wrap py-10 bg-[#effafa]">
-            <div class="w-4/12 p-8">
+        <section class="px-16 lg:px-32 block md:flex md:flex-wrap py-10 bg-[#effafa]">
+            <div class="w-12/12 md:w-6/12 lg:w-4/12 p-5">
                 <h3 class="text-green-600 text-2xl">01</h3>
                 <h1 class="text-black text-3xl">Lorem ipsum</h1>
                 <p class="text-slate-400 text-md my-5">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
             </div>
-            <div class="w-4/12 p-8">
+            <div class="w-12/12 md:w-6/12 lg:w-4/12 p-5">
                 <h3 class="text-green-600 text-2xl">02</h3>
                 <h1 class="text-black text-3xl">Repellat Nihil</h1>
                 <p class="text-slate-400 text-md my-5">Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
             </div>
-            <div class="w-4/12 p-8">
+            <div class="w-12/12 md:w-6/12 lg:w-4/12 p-5">
                 <h3 class="text-green-600 text-2xl">03</h3>
                 <h1 class="text-black text-3xl">Ad ad velit qui</h1>
                 <p class="text-slate-400 text-md my-5">Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
             </div>
-            <div class="w-4/12 p-8">
+            <div class="w-12/12 md:w-6/12 lg:w-4/12 p-5">
                 <h3 class="text-green-600 text-2xl">04</h3>
                 <h1 class="text-black text-3xl">Repellendus molestiae</h1>
                 <p class="text-slate-400 text-md my-5">Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
             </div>
-            <div class="w-4/12 p-8">
+            <div class="w-12/12 md:w-6/12 lg:w-4/12 p-5">
                 <h3 class="text-green-600 text-2xl">05</h3>
                 <h1 class="text-black text-3xl">Sapiente Magnam</h1>
                 <p class="text-slate-400 text-md my-5">Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
             </div>
-            <div class="w-4/12 p-8">
+            <div class="w-12/12 md:w-6/12 lg:w-4/12 p-5">
                 <h3 class="text-green-600 text-2xl">06</h3>
                 <h1 class="text-black text-3xl">Facilis Impedit</h1>
                 <p class="text-slate-400 text-md my-5">Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
             </div>
         </section>
 
-        <section class="px-32 flex flex-wrap py-10">
+        <section class="px-16 block lg:px-32 lg:flex lg:flex-wrap py-10">
 
-            <div class="w-4/12">
+            <div class="w-12/12 lg:w-5/12">
                 <ul>
                     <li class="rounded-md shadow-lg px-4 py-2">
                         <h1 class="text-xl text-green-600">Modi sit est</h1>
@@ -124,33 +128,33 @@
                     </li>
                 </ul>
             </div>
-            <div class="w-4/12 p-5">
+            <div class="w-12/12 lg:w-5/12 p-5">
                 <img src="img/features-1.png" alt="">
             </div>
         </section>
 
-        <section class="px-32 flex flex-wrap py-10 bg-[#effafa] text-center justify-center">
+        <section class="px-16 block lg:px-32 lg:flex lg:flex-wrap py-10 bg-[#effafa] text-center justify-center">
             <h1 class="text-4xl">Services</h1>
             <P class="text-md my-4">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</P>
 
-            <div class="flex justify-between gap-5">
+            <div class="block md:flex md:justify-between md:flex-wrap lg:flex-nowrap gap-3">
 
-                <div class="px-5 py-8 bg-white rounded-lg drop-shadow-lg w-3/12">
+                <div class="px-5 py-8 my-5 bg-white rounded-lg drop-shadow-lg w-12/12 md:w-5/12 lg:w-3/12">
                     <i class="ri-dribbble-line text-5xl text-pink-400"></i>
                     <h2 class="text-2xl my-2">Lorem ipsum</h2>
                     <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate</p>
                 </div>
-                <div class="px-5 py-8 bg-white rounded-lg drop-shadow-lg w-3/12">
+                <div class="px-5 py-8 my-5 bg-white rounded-lg drop-shadow-lg w-12/12 md:w-5/12 lg:w-3/12">
                     <i class="ri-article-line text-5xl text-cyan-500"></i>
                     <h2 class="text-2xl my-2">Sed ut perspiciatis</h2>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
                 </div>
-                <div class="px-5 py-8 bg-white rounded-lg drop-shadow-lg w-3/12">
+                <div class="px-5 py-8 my-5 bg-white rounded-lg drop-shadow-lg w-12/12 md:w-5/12 lg:w-3/12">
                     <i class="ri-speed-up-line text-5xl text-green-500"></i>
                     <h2 class="text-2xl my-2">Magni Dolores</h2>
                     <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim</p>
                 </div>
-                <div class="px-5 py-8 bg-white rounded-lg drop-shadow-lg w-3/12">
+                <div class="px-5 py-8 my-5 bg-white rounded-lg drop-shadow-lg w-12/12 md:w-5/12 lg:w-3/12">
                     <i class="ri-earth-line text-5xl text-blue-600"></i>
                     <h2 class="text-2xl my-2">Nemo Enim</h2>
                     <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
@@ -159,12 +163,12 @@
             </div>
         </section>
 
-        <section class="px-32 flex flex-wrap pb-36 pt-10 text-center justify-center">
+        <section class="px-16 lg:px-32 lg:flex lg:flex-wrap pb-36 pt-10 text-center justify-center">
             <h1 class="text-4xl">Services</h1>
             <P class="text-md my-4">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</P>
         
-            <div class="flex gap-4">
-                <div class="relative w-4/12">
+            <div class="lg:flex flex-nowrap gap-4">
+                <div class="relative w-12/12 lg:w-4/12 mb-[70px] lg:mb-[0px]">
                     <div class="bg-[#effafa] px-5 pt-5 pb-14 rounded-lg  ">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente obcaecati veniam repudiandae error voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quibusdam.</p>
                     </div>
@@ -173,7 +177,7 @@
                         <p class="my-1">CEO & FOUNDER</p>
                     </div>
                 </div>
-                <div class="relative w-4/12">
+                <div class="relative w-12/12 lg:w-4/12 mb-[70px] lg:mb-[0px]">
                     <div class="bg-[#effafa] px-5 pt-5 pb-14 rounded-lg  ">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente obcaecati veniam repudiandae error voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quibusdam.</p>
                     </div>
@@ -182,7 +186,7 @@
                         <p class="my-1">Designer</p>
                     </div>
                 </div>
-                <div class="relative w-4/12">
+                <div class="relative w-12/12 lg:w-4/12">
                     <div class="bg-[#effafa] px-5 pt-5 pb-14 rounded-lg ">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi sapiente obcaecati veniam repudiandae error voluptates! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quibusdam.</p>
                     </div>
@@ -194,7 +198,7 @@
             </div>
         </section>
 
-        <section class="px-32 flex flex-wrap py-10 bg-[#effafa] text-center justify-center">
+        <section class="px-16 lg:px-32 lg:flex lg:flex-wrap py-10 bg-[#effafa] text-center justify-center">
             <h1 class="text-4xl">Portfolio</h1>
             <P class="text-md my-4">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</P>
 
@@ -207,9 +211,9 @@
                     <span class="hover:text-green-600">Web</span>
             </div>
 
-            <div class="flex justify-between gap-5 mt-12">
-                <div class="relative">
-                    <div class="absolute h-full w-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
+            <div class="flex flex-wrap justify-between gap-y-3 mt-12">
+                <div class="w-12/12 md:w-6/12 lg:w-4/12 relative">
+                    <div class="absolute w-[400px] h-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500 ">
                         <div class="m-auto opacity-100">
                             <h1 class="text-xl">APP 1</h1>
                             <p>APP</p>
@@ -217,8 +221,8 @@
                     </div>
                     <img src="img/portfolio-1.jpg" alt="" height="400px" width="400px">
                 </div>
-                <div class="relative">
-                    <div class="absolute h-full w-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
+                <div class="w-12/12 md:w-6/12 lg:w-4/12 relative">
+                    <div class="absolute w-[400px] h-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
                         <div class="m-auto opacity-100">
                             <h1 class="text-xl">WEB 3</h1>
                             <p>WEB</p>
@@ -226,8 +230,8 @@
                     </div>
                     <img src="img/portfolio-2.jpg" alt="" height="400px" width="400px">
                 </div>
-                <div class="relative">
-                    <div class="absolute h-full w-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
+                <div class="w-12/12 md:w-6/12 lg:w-4/12 relative">
+                    <div class="absolute w-[400px] h-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
                         <div class="m-auto opacity-100">
                             <h1 class="text-xl">APP 2</h1>
                             <p>APP</p>
@@ -235,10 +239,9 @@
                     </div>  
                     <img src="img/portfolio-3.jpg" alt="" height="400px" width="400px">
                 </div>
-            </div>
-            <div class="flex justify-between gap-5 mt-12">
-                <div class="relative">
-                    <div class="absolute h-full w-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
+            
+                <div class="w-12/12 md:w-6/12 lg:w-4/12 relative">
+                    <div class="absolute w-[400px] h-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
                         <div class="m-auto opacity-100">
                             <h1 class="text-xl">CARD 2</h1>
                             <p>CARD</p>
@@ -246,8 +249,8 @@
                     </div>
                     <img src="img/portfolio-4.jpg" alt="" height="400px" width="400px">
                 </div>
-                <div class="relative">
-                    <div class="absolute h-full w-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
+                <div class="w-12/12 md:w-6/12 lg:w-4/12 relative">
+                    <div class="absolute w-[400px] h-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
                         <div class="m-auto opacity-100">
                             <h1 class="text-xl">WEB 2</h1>
                             <p>WEB</p>
@@ -255,8 +258,8 @@
                     </div>
                     <img src="img/portfolio-5.jpg" alt="" height="400px" width="400px">
                 </div>
-                <div class="relative">
-                    <div class="absolute h-full w-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
+                <div class="w-12/12 md:w-6/12 lg:w-4/12 relative">
+                    <div class="absolute w-[400px] h-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
                         <div class="m-auto opacity-100">
                             <h1 class="text-xl">APP 3</h1>
                             <p>APP</p>
@@ -264,10 +267,9 @@
                     </div>  
                     <img src="img/portfolio-6.jpg" alt="" height="400px" width="400px">
                 </div>
-            </div>
-            <div class="flex justify-between gap-5 mt-12">
-                <div class="relative">
-                    <div class="absolute h-full w-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
+            
+                <div class="w-12/12 md:w-6/12 lg:w-4/12 relative">
+                    <div class="absolute w-[400px] h-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
                         <div class="m-auto opacity-100">
                             <h1 class="text-xl">CARD 1</h1>
                             <p>CARD</p>
@@ -275,8 +277,8 @@
                     </div>
                     <img src="img/portfolio-7.jpg" alt="" height="400px" width="400px">
                 </div>
-                <div class="relative">
-                    <div class="absolute h-full w-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
+                <div class="w-12/12 md:w-6/12 lg:w-4/12 relative">
+                    <div class="absolute w-[400px] h-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
                         <div class="m-auto opacity-100">
                             <h1 class="text-xl">CARD 3</h1>
                             <p>CARD</p>
@@ -284,8 +286,8 @@
                     </div>
                     <img src="img/portfolio-8.jpg" alt="" height="400px" width="400px">
                 </div>
-                <div class="relative">
-                    <div class="absolute h-full w-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
+                <div class="w-12/12 md:w-6/12 lg:w-4/12 relative">
+                    <div class="absolute w-[400px] h-full bg-black opacity-0 text-white flex items-center hover:opacity-60 transition-all duration-500">
                         <div class="m-auto opacity-100">
                             <h1 class="text-xl">WEB 3</h1>
                             <p>WEB</p>
@@ -297,11 +299,11 @@
             </div>
         </section>
 
-        <section class="px-32 flex flex-wrap py-10 text-center justify-center">
+        <section class="px-16 lg:px-32 lg:flex lg:flex-wrap py-10 text-center justify-center">
             <h1 class="text-4xl">Team</h1>
             <P class="text-md my-4">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</P>
 
-            <div class="flex justify-center gap-5 items-center">
+            <div class="flex justify-center flex-wrap gap-3 items-center">
                 <div class="relative">
                     <div class="absolute flex-col flex text-xl h-full items-center py-5 px-2 bg-black text-white opacity-0 hover:opacity-100">
                         <i class="ri-twitter-line"></i>
@@ -342,12 +344,12 @@
         
         </section>
 
-        <section class="px-32 flex flex-wrap py-10 text-center justify-center">
+        <section class="px-16 lg:px-32 lg:flex lg:flex-wrap py-10 text-center lg:justify-center">
             <h1 class="text-4xl">Contact</h1>
             <P class="text-md my-4">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</P>
 
-                <div class="flex justify-between gap-5 w-10/12 h-[300px]">
-                    <div class="shadow-xl p-5 w-[50%] h-full">    
+                <div class="block w-12/12 lg:flex lg:justify-between gap-2 lg:w-10/12 ">
+                    <div class="shadow-xl p-5 w-[100%] lg:w-[50%] h-full">    
                         <div class="flex gap-x-2 my-5">
                             <div>
                                 <i class="ri-map-pin-line px-3 py-2 rounded-full bg-[#effafa] text-2xl text-green-600 hover:bg-green-500 hover:text-white"></i>
@@ -380,12 +382,12 @@
                         </div>
                      
                     </div>
-                    <div class="shadow-xl p-5 w-[50%] h-full">
+                    <div class="shadow-xl p-5 w-[100%] lg:w-[50%] h-full">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.2507231824707!2d72.87893757503477!3d21.142418180535564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be051c06d87ab17%3A0x809cd984bd5b6d6d!2sRed%20%26%20White%20Multimedia%20Education!5e0!3m2!1sen!2sin!4v1718337998918!5m2!1sen!2sin" style="border:0;" class="w-full h-full" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
-                <div class="my-10 shadow p-5 w-10/12">
+                <div class="block my-10 shadow p-5 w-12/12 lg:w-10/12">
                     <div class="flex gap-3">
                         <input type="text" placeholder="Your Name" class="w-6/12 border px-3 py-2">  
                         <input type="text" placeholder="Your Name" class="w-6/12 border px-3 py-2" >  
@@ -400,9 +402,9 @@
 
         </section>
 
-        <footer class="px-32 flex flex-wrap py-10 bg-[#0c1817;] text-center justify-center">
-            <div class="text-white flex gap-10 w-full justify-center py-5">
-                <div class="w-3/12 h-56 text-left">
+        <footer class="px-16 lg:px-32 lg:flex lg:flex-wrap py-10 bg-[#0c1817;] text-center lg:justify-center">
+            <div class="text-white lg:flex gap-10 w-full justify-center py-5">
+                <div class="w-12/12 lg:w-3/12 h-56 text-left">
                     <h4 class="text-xl">Maxim</h4>
                     <h4 class="text-md my-3">Address</h4>
                     <h4 class="text-md my-1">Phone : 0000</h4>
@@ -418,7 +420,7 @@
 
 
                 </div>
-                <div class="w-2/12 text-left">
+                <div class="w-12/12 lg:w-2/12 text-left">
                     <h4 class="text-xl">Useful Links</h4>
                     <ul>
                         <li class="my-3"><i class="ri-arrow-right-s-line text-green-600"></i> Home</li>
@@ -428,7 +430,7 @@
                         <li class="my-3"><i class="ri-arrow-right-s-line text-green-600"></i> Privacy policy</li>
                     </ul> 
                 </div>
-                <div class="w-2/12 text-left">
+                <div class="w-12/12 lg:w-2/12 text-left">
                     <h4 class="text-xl">Our Services</h4>
                     <ul>
                         <li class="my-3"><i class="ri-arrow-right-s-line text-green-600"></i> Web Design</li>
@@ -438,7 +440,7 @@
                         <li class="my-3"><i class="ri-arrow-right-s-line text-green-600"></i> Graphic Design</li>
                     </ul> 
                 </div>
-                <div class="w-4/12  text-left">
+                <div class="w-12/12 lg:w-4/12  text-left">
                     <h4 class="text-xl">Our Newsletter</h4>
 
                     <h4 class="text-md my-3">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</h4>
@@ -455,6 +457,28 @@
 
     </div>
     
-    
 </body>
 </html>
+
+<script>
+
+    const navMenu =document.querySelector(".navMenu")
+    console.log(navMenu)
+
+    function menulist(e){
+
+        e.classList=e.classList=="ri-menu-line" ? "ri-close-line":"ri-menu-line";
+
+        if(e.classList=="ri-close-line"){
+            navMenu.classList.add("block")
+            navMenu.classList.remove("hidden")
+            console.log("close")
+        }
+        else{
+            console.log("menu");
+            navMenu.classList.add("hidden")
+            navMenu.classList.remove("block")
+        }
+    }
+
+</script>
