@@ -29,6 +29,13 @@
             }
         }
     </script>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body class="scroll-smooth">
@@ -46,7 +53,7 @@
                     <li><a href="#download">DOWNLOAD</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
-                <button class="bg-red-500 text-white shadow-md rounded-md px-7 py-2">LOGIN</button>
+                <button class="bg-red-500 text-white shadow-md rounded-md px-7 py-2 hover:text-red-500 hover:bg-white border-2 border-red-500">LOGIN</button>
             </div>
 
             <div class="block md:hidden text-3xl text-black">
@@ -79,17 +86,15 @@
 
                 <div class="flex justify-center items-center my-10 space-x-4">
                     <button
-                        class="px-4 py-4 bg-blue-700 rounded-md text-white text-sm md:text-lg lg:text-lg font-semibold">Get
+                        class="px-4 py-3 bg-blue-500 rounded-md text-white text-sm md:text-lg lg:text-lg font-semibold hover:bg-white border-2 border-blue-600 hover:text-blue-600">Get
                         It On Chrome</button>
                     <button
-                        class="px-4 py-4 bg-gray-400 rounded-md text-black text-sm md:text-lg lg:text-lg font-semibold">Get
-                        It On Firefox</button>
+                        class="px-4 py-3 bg-gray-400 rounded-md text-black text-sm md:text-lg lg:text-lg font-semibold hover:bg-white border-2">Get It On Firefox</button>
                 </div>
             </div>
 
             <div class="relative w-12/12 lg:w-6/12 mx-autoh-full">
-                <div
-                    class="absolute bg-blue-700 h-[300px] w-[550px] rounded-bl-[45%] left-[30%] top-[40%] hidden xl:block">
+                <div class="absolute bg-blue-700 h-[300px] w-[550px] rounded-bl-[45%] left-[30%] top-[40%] hidden xl:block">
                 </div>
                 <img src="img/bg-hero.svg" alt="" class="relative overflow-y-visible mx-auto">
             </div>
@@ -100,13 +105,11 @@
     <section id="features" class="container mx-auto p-6 lg:px-16 lg:py-12">
         <div class="text-center">
             <h1 class="text-4xl font-bold">Features</h1>
-            <p class=" max-w-md mx-auto my-6 text-gray-400 text-lg">Our aim is to make it quick and easy for you to
-                access your favourite websites. Your bookmarks sync between your devices so you can access them on the
-                go.</p>
+            <p class=" max-w-md mx-auto my-6 text-gray-400 text-lg">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
 
         <div class="mt-12">
-            <div>
+            <div class="max-w-xl lg:max-w-2xl mx-auto">
                 <ul class="flex flex-col md:flex-row text-center md:space-x-16 text-lg my-5 mx-auto justify-center">
                     <li>Simple Bookmarking</li>
                     <hr class="my-4">
@@ -117,10 +120,91 @@
                 <hr>
             </div>
 
+            <div class="flex flex-col lg:flex-row my-12">
+
+                <div class="relative w-12/12 lg:w-6/12 ">
+                    <div class="absolute bg-blue-700 h-[300px] w-[550px] rounded-br-[45%] right-[30%] top-[40%] hidden xl:block">
+                    </div>
+                    <img src="img/features.svg" alt="" class="relative overflow-y-visible mx-auto">
+                </div>
+
+                <div class="px-6 pt-24 w-12/12 lg:w-6/12  text-center lg:text-left">
+                    <h1 class="text-3xl font-bold">Bookmark in one click</h1>
+                    <p class=" max-w-md mx-auto lg:mx-0 text-center lg:text-left text-gray-400 my-5">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                    <button  class="px-4 py-3 bg-blue-500 rounded-md text-white text-sm md:text-lg lg:text-lg font-semibold">MORE INFO</button>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <section id="download" class="container mx-auto p-6 lg:px-16 lg:py-12 max-w-5xl">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold">Download the extension</h1>
+            <p class=" max-w-lg mx-auto my-6 text-gray-400 text-lg">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritize.</p>
+        </div>
 
+        <div class="flex flex-col md:flex-row justify-center items-center my-16 md:my-10 mx-auto md:space-x-7">
+
+            <div class="text-center shadow-lg py-6 w-full md:w-1/3 space-y-4 rounded-xl">
+                <div class="p-5 "><img src="img/logo-chrome.svg" alt="" class="mx-auto"> </div>
+                <h4 class="text-2xl font-bold ">Add to Chrome</h4>
+                <p class="text-gray-400 text-lg">Minimum Version 62</p>
+                <div class="bg-dots">
+                    <button class="px-4 py-4 bg-blue-500 rounded-md text-white text-sm md:text-lg lg:text-lg font-semibold">Add & Install Extension</button>
+                </div>
+            </div>
+            <div class="text-center shadow-lg py-6 w-full md:w-1/3 space-y-4 rounded-xl md:mt-8">
+                <div class="p-5 "><img src="img/logo-firefox.svg" alt="" class="mx-auto"> </div>
+                <h4 class="text-2xl font-bold ">Add to Chrome</h4>
+                <p class="text-gray-400 text-lg">Minimum Version 55</p>
+                <div class="bg-dots">
+                    <button class="px-4 py-4 bg-blue-500 rounded-md text-white text-sm md:text-lg lg:text-lg font-semibold">Add & Install Extension</button>
+                </div>
+            </div>
+            <div class="text-center shadow-lg py-6 w-full md:w-1/3 space-y-4 rounded-xl md:mt-16">
+                <div class="p-5 "><img src="img/logo-opera.svg" alt="" class="mx-auto"> </div>
+                <h4 class="text-2xl font-bold ">Add to Chrome</h4>
+                <p class="text-gray-400 text-lg">Minimum Version 46</p>
+                <div class="bg-dots">
+                    <button class="px-4 py-4 bg-blue-500 rounded-md text-white text-sm md:text-lg lg:text-lg font-semibold">Add & Install Extension</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="mx-auto p-6 lg:px-16 lg:py-12 bg-blue-500">
+        <div class="mx-auto text-center p-6 max-w-lg  space-y-2">
+            <p class="text-lg text-white space-x-3">35,000 +  ALREADY JOINED</p>
+            <h1 class="text-4xl text-white font-bold">Stay up-to-date with what we're doing </h1>
+            <div class="space-x-2 my-3 flex flex-col md:flex-row justify-center space-y-2"> 
+                <input type="text" placeholder="Enter your email address" class="outline-none px-3 py-2 rounded-md">
+                <button class="bg-red-500 text-white px-3 py-2 max-w-28 rounded-md mx-auto font-bold">Contact us</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="mx-auto p-6 lg:px-16 lg:py-12 bg-blue-950">
+        
+        <div class="container flex flex-col md:flex-row items-center justify-center space-y-5  md:justify-between">
+            <div class="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-16"> 
+                <img src="img/logo-bookmark-footer.svg" alt="" class="max-h-7 max-w-30">
+
+                <ul class="flex flex-col md:flex-row text-center  md:space-x-16 md:items-center font-medium text-gray-500">
+                        <li><a href="#features">FEATURES</a></li>
+                        <li><a href="#download">DOWNLOAD</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+            </div>
+            <div class="flex justify-center md:justify-between space-x-5 md:space-x-10 text-white text-3xl">
+                <i class="ri-facebook-box-fill"></i>
+                <i class="ri-twitter-fill"></i>
+            </div>
+        </div>
+
+    </section>
 
 
 </body>
